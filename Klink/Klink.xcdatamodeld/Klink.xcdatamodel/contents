@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Automatic">
+    <entity name="Address" representedClassName=".Address" syncable="YES">
+        <attribute name="addressLine1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="addressLine2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stateCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zipCode" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="addresses" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Cart" representedClassName=".Cart" syncable="YES">
+        <attribute name="canCheckout" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="checkoutMessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemsTotal" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="promotionTotal" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="shippingTotal" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="taxTotal" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="tipTotal" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="total" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Item" inverseName="cart" inverseEntity="Item" syncable="YES"/>
+    </entity>
+    <entity name="CreditCard" representedClassName=".CreditCard" syncable="YES">
+        <attribute name="brand" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardholderName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expiryMonth" attributeType="String" syncable="YES"/>
+        <attribute name="expiryYear" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="isDefault" attributeType="Boolean" syncable="YES"/>
+        <attribute name="last4digits" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="creditCards" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Item" representedClassName=".Item" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="local" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="serverQuantity" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="total" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="unitPrice" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="variantID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="cart" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Cart" inverseName="items" inverseEntity="Cart" syncable="YES"/>
+    </entity>
+    <entity name="Product" syncable="YES"/>
+    <entity name="RecentAddress" representedClassName=".RecentAddress" syncable="YES">
+        <attribute name="administrativeArea" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="current" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="locality" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postalCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stateName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="street" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName=".User" syncable="YES">
+        <attribute name="birthday" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="email" attributeType="String" syncable="YES"/>
+        <attribute name="fullName" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="addresses" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Address" inverseName="user" inverseEntity="Address" syncable="YES"/>
+        <relationship name="creditCards" toMany="YES" deletionRule="Cascade" destinationEntity="CreditCard" inverseName="user" inverseEntity="CreditCard" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Address" positionX="-36" positionY="-684" width="128" height="195"/>
+        <element name="Cart" positionX="153" positionY="-531" width="128" height="180"/>
+        <element name="CreditCard" positionX="45" positionY="-459" width="128" height="165"/>
+        <element name="Item" positionX="171" positionY="-513" width="128" height="195"/>
+        <element name="Product" positionX="162" positionY="-522" width="128" height="45"/>
+        <element name="RecentAddress" positionX="45" positionY="-531" width="128" height="150"/>
+        <element name="User" positionX="349" positionY="-567" width="128" height="165"/>
+    </elements>
+</model>
