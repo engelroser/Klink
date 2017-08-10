@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Gotham-Book.otf">
+            <string>Gotham-Book</string>
+            <string>Gotham-Book</string>
+            <string>Gotham-Book</string>
+        </mutableArray>
+        <mutableArray key="Gotham-Medium.otf">
+            <string>Gotham-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="AccountUserInfoTableViewCell" customModule="Klink" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="361" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoe-zR-JUD" customClass="KLLabel" customModule="Klink" customModuleProvider="target">
+                        <rect key="frame" x="16" y="16" width="329" height="16"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="16"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/13/1991" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YpL-ZZ-lV3" customClass="KLLabel" customModule="Klink" customModuleProvider="target">
+                        <rect key="frame" x="16" y="37" width="329" height="12"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="12"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email_address@email.com" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zt-gY-rxy" customClass="KLLabel" customModule="Klink" customModuleProvider="target">
+                        <rect key="frame" x="16" y="54" width="329" height="12"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="12"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(123) 123-1234" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iG-yo-mcq" customClass="KLLabel" customModule="Klink" customModuleProvider="target">
+                        <rect key="frame" x="16" y="71" width="329" height="12"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="12"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Dc-Ow-ARG">
+                        <rect key="frame" x="0.0" y="98" width="461" height="1"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="0.25" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="dK5-rv-mWY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4zt-gY-rxy" secondAttribute="bottom" constant="5" id="BsT-BL-N2B"/>
+                    <constraint firstItem="4zt-gY-rxy" firstAttribute="top" secondItem="YpL-ZZ-lV3" secondAttribute="bottom" constant="5" id="Dfv-2e-jzz"/>
+                    <constraint firstAttribute="bottom" secondItem="1Dc-Ow-ARG" secondAttribute="bottom" id="Ncd-9k-xFa"/>
+                    <constraint firstItem="eoe-zR-JUD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="QSD-pL-BTe"/>
+                    <constraint firstItem="YpL-ZZ-lV3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="S9Q-cr-xhB"/>
+                    <constraint firstAttribute="trailing" secondItem="YpL-ZZ-lV3" secondAttribute="trailing" constant="16" id="TZH-4r-17z"/>
+                    <constraint firstAttribute="trailing" secondItem="2iG-yo-mcq" secondAttribute="trailing" constant="16" id="Zsp-Mc-gGz"/>
+                    <constraint firstItem="1Dc-Ow-ARG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="d0C-pn-Uu5"/>
+                    <constraint firstAttribute="trailing" secondItem="1Dc-Ow-ARG" secondAttribute="trailing" constant="-100" id="dIp-uj-Mbb"/>
+                    <constraint firstAttribute="trailing" secondItem="4zt-gY-rxy" secondAttribute="trailing" constant="16" id="guf-hE-Ugo"/>
+                    <constraint firstItem="YpL-ZZ-lV3" firstAttribute="top" secondItem="eoe-zR-JUD" secondAttribute="bottom" constant="5" id="lQS-EU-NrS"/>
+                    <constraint firstItem="2iG-yo-mcq" firstAttribute="top" secondItem="4zt-gY-rxy" secondAttribute="bottom" constant="5" id="lji-gy-Xpf"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4zt-gY-rxy" secondAttribute="bottom" constant="6" id="qdK-Pb-LEI"/>
+                    <constraint firstItem="4zt-gY-rxy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="t3x-jp-bYb"/>
+                    <constraint firstItem="eoe-zR-JUD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="tcl-zQ-5ig"/>
+                    <constraint firstItem="1Dc-Ow-ARG" firstAttribute="top" secondItem="2iG-yo-mcq" secondAttribute="bottom" constant="15" id="xG4-0e-kN9"/>
+                    <constraint firstItem="2iG-yo-mcq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="ypN-Sn-ZVH"/>
+                    <constraint firstAttribute="trailing" secondItem="eoe-zR-JUD" secondAttribute="trailing" constant="16" id="zLK-d6-baA"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="BsT-BL-N2B"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <animations/>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="birthdayLabel" destination="YpL-ZZ-lV3" id="bfq-9U-sOQ"/>
+                <outlet property="emailLabel" destination="4zt-gY-rxy" id="2L9-RF-xC2"/>
+                <outlet property="fullNameLabel" destination="eoe-zR-JUD" id="Gi1-3C-ME8"/>
+                <outlet property="phoneNumberBottomConstraint" destination="xG4-0e-kN9" id="aRc-E9-uWD"/>
+                <outlet property="phoneNumberLabel" destination="2iG-yo-mcq" id="cZQ-K3-2Ne"/>
+            </connections>
+            <point key="canvasLocation" x="494" y="492"/>
+        </tableViewCell>
+    </objects>
+</document>
