@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddressSearchViewController" customModule="Klink" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="PHI-Yn-oUc" id="azG-Dw-PPN"/>
+                <outlet property="containerViewBottomConstraint" destination="fi8-Vc-2XK" id="9IB-cn-1ic"/>
+                <outlet property="searchBar" destination="L7d-fO-NAM" id="Kga-PW-dwv"/>
+                <outlet property="view" destination="9Zl-Qp-1jf" id="7Sk-Q4-Yhv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9Zl-Qp-1jf">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backdrop-image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LQ4-1g-9fx">
+                    <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                    <animations/>
+                </imageView>
+                <searchBar contentMode="redraw" searchBarStyle="prominent" placeholder="Type your delivery address to start" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7d-fO-NAM">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.91372549020000005" green="0.61176470589999998" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="zav-Sq-5d8"/>
+                    </constraints>
+                    <color key="barTintColor" red="0.91372549020000005" green="0.61176470589999998" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PHI-Yn-oUc" userLabel="container view">
+                    <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="PHI-Yn-oUc" firstAttribute="leading" secondItem="9Zl-Qp-1jf" secondAttribute="leading" id="1TH-Mh-jCK"/>
+                <constraint firstAttribute="bottom" secondItem="LQ4-1g-9fx" secondAttribute="bottom" id="BgT-GU-MSl"/>
+                <constraint firstAttribute="trailing" secondItem="L7d-fO-NAM" secondAttribute="trailing" id="DNT-nz-AWb"/>
+                <constraint firstAttribute="trailing" secondItem="LQ4-1g-9fx" secondAttribute="trailing" id="Ddu-Ld-7U5"/>
+                <constraint firstItem="PHI-Yn-oUc" firstAttribute="top" secondItem="L7d-fO-NAM" secondAttribute="bottom" id="GmB-KT-ZvN"/>
+                <constraint firstItem="LQ4-1g-9fx" firstAttribute="leading" secondItem="9Zl-Qp-1jf" secondAttribute="leading" id="IwG-Hg-NBx"/>
+                <constraint firstItem="L7d-fO-NAM" firstAttribute="leading" secondItem="9Zl-Qp-1jf" secondAttribute="leading" id="J9l-7e-hhe"/>
+                <constraint firstItem="L7d-fO-NAM" firstAttribute="top" secondItem="9Zl-Qp-1jf" secondAttribute="top" id="b6e-cY-mP6"/>
+                <constraint firstAttribute="bottom" secondItem="PHI-Yn-oUc" secondAttribute="bottom" id="fi8-Vc-2XK"/>
+                <constraint firstItem="LQ4-1g-9fx" firstAttribute="top" secondItem="L7d-fO-NAM" secondAttribute="bottom" id="gtG-by-lxD"/>
+                <constraint firstAttribute="trailing" secondItem="PHI-Yn-oUc" secondAttribute="trailing" id="jOz-ll-ufz"/>
+            </constraints>
+            <point key="canvasLocation" x="451" y="436"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backdrop-image.jpg" width="375" height="667"/>
+    </resources>
+</document>
