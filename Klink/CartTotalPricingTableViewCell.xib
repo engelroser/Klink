@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Gotham-Bold-test.otf">
+            <string>Gotham-Bold</string>
+            <string>Gotham-Bold</string>
+        </mutableArray>
+        <mutableArray key="Gotham-Book.otf">
+            <string>Gotham-Book</string>
+            <string>Gotham-Book</string>
+            <string>Gotham-Book</string>
+            <string>Gotham-Book</string>
+            <string>Gotham-Book</string>
+            <string>Gotham-Book</string>
+            <string>Gotham-Book</string>
+            <string>Gotham-Book</string>
+            <string>Gotham-Book</string>
+            <string>Gotham-Book</string>
+            <string>Gotham-Book</string>
+            <string>Gotham-Book</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="484" id="KGk-i7-Jjw" customClass="CartTotalPricingTableViewCell" customModule="Klink" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="487" height="484"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="487" height="483.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aUa-Pf-6eo">
+                        <rect key="frame" x="20" y="0.0" width="447" height="483"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="R8d-wa-t30">
+                                <rect key="frame" x="322" y="20" width="125" height="41"/>
+                                <segments>
+                                    <segment title="10%"/>
+                                    <segment title="15%"/>
+                                    <segment title="20%"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="percentageChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="Fua-a0-9V4"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIP ($)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIr-JX-95x" customClass="KLLabel" customModule="Klink" customModuleProvider="target">
+                                <rect key="frame" x="170" y="33" width="52" height="15"/>
+                                <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfX-CY-b2V" customClass="BorderedButton" customModule="Klink" customModuleProvider="target">
+                                <rect key="frame" x="328" y="75" width="119" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="143" id="bsu-BH-XVR"/>
+                                    <constraint firstAttribute="height" constant="40" id="wFd-Ah-JdC"/>
+                                </constraints>
+                                <state key="normal" title="PROMO CODE"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="bsu-BH-XVR"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="promoCodePressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="UMN-Uq-5Uc"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQA-aC-dk5" customClass="BorderedButton" customModule="Klink" customModuleProvider="target">
+                                <rect key="frame" x="179" y="75" width="134" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="PUI-TG-6Sj"/>
+                                    <constraint firstAttribute="width" constant="160" id="VOf-0Y-tGB"/>
+                                </constraints>
+                                <state key="normal" title="SEND AS A GIFT"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="VOf-0Y-tGB"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="sendAsAGiftPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Du4-or-MuW"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07T-Ks-Xtg" customClass="BorderedButton" customModule="Klink" customModuleProvider="target">
+                                <rect key="frame" x="201" y="130" width="246" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="246" id="3z9-Xn-lFw"/>
+                                    <constraint firstAttribute="height" id="B3R-IE-6h7"/>
+                                </constraints>
+                                <state key="normal" title="SCHEDULE DELIVERY TIME">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="scheduleDeliveryPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="pSl-VR-evB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$50.00" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffC-h0-QO7" customClass="KLLabel" customModule="Klink" customModuleProvider="target">
+                                <rect key="frame" x="379" y="145" width="58" height="16"/>
+                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtotal:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53G-eO-BHA" customClass="KLLabel" customModule="Klink" customModuleProvider="target">
+                                <rect key="frame" x="297" y="145" width="72" height="16"/>
+                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$3.87" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHA-su-lzK" customClass="KLLabel" customModule="Klink" customModuleProvider="target">
+                                <rect key="frame" x="393" y="166" width="44" height="16"/>
+                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogI-Lv-g8Y" customClass="KLLabel" customModule="Klink" customModuleProvider="target">
+                                <rect key="frame" x="314" y="166" width="69" height="16"/>
+                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$2.18" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91j-We-sF6" customClass="KLLabel" customModule="Klink" customModuleProvider="target">
+                                <rect key="frame" x="398" y="187" width="39" height="16"/>
+                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tax:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Gm-WO-hCx">
+                                <rect key="frame" x="357" y="187" width="31" height="16"/>
+                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$-3.87" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOn-Sl-9bm" customClass="KLLabel" customModule="Klink" customModuleProvider="target">
+                                <rect key="frame" x="387" y="208" width="50" height="16"/>
+                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6u-Wg-WvW">
+                                <rect key="frame" x="302" y="208" width="75" height="16"/>
+                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$7.50" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5P1-Ms-AA5" customClass="KLLabel" customModule="Klink" customModuleProvider="target">
+                                <rect key="frame" x="393" y="229" width="44" height="16"/>
+                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoB-rs-fWD">
+                                <rect key="frame" x="354" y="229" width="29" height="16"/>
+                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$80.00" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfF-x7-YHZ" customClass="KLLabel" customModule="Klink" customModuleProvider="target">
+                                <rect key="frame" x="379" y="250" width="58" height="16"/>
+                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yo5-lo-Xvh">
+                                <rect key="frame" x="324" y="250" width="45" height="16"/>
+                                <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="7.50" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vJo-i5-iFe">
+                                <rect key="frame" x="232" y="20" width="75" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="AfF-R3-Ul6"/>
+                                    <constraint firstAttribute="height" constant="40" id="Ncd-bg-mH4"/>
+                                    <constraint firstAttribute="width" constant="60" id="qmF-fN-AAP"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="qmF-fN-AAP"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Gm-WO-hCx" firstAttribute="centerY" secondItem="91j-We-sF6" secondAttribute="centerY" id="1Mw-q8-Tsx"/>
+                            <constraint firstItem="91j-We-sF6" firstAttribute="top" secondItem="pHA-su-lzK" secondAttribute="bottom" constant="5" id="4ui-i5-de5"/>
+                            <constraint firstAttribute="trailing" secondItem="R8d-wa-t30" secondAttribute="trailing" id="6Uc-bD-4UR"/>
+                            <constraint firstItem="vJo-i5-iFe" firstAttribute="top" secondItem="aUa-Pf-6eo" secondAttribute="top" constant="20" id="8dQ-zc-f73"/>
+                            <constraint firstItem="iQA-aC-dk5" firstAttribute="centerY" secondItem="gfX-CY-b2V" secondAttribute="centerY" id="8ts-qt-QIB"/>
+                            <constraint firstItem="07T-Ks-Xtg" firstAttribute="top" secondItem="gfX-CY-b2V" secondAttribute="bottom" constant="15" id="BD6-GM-uQU"/>
+                            <constraint firstAttribute="trailing" secondItem="eOn-Sl-9bm" secondAttribute="trailing" constant="10" id="C0D-dg-LfD"/>
+                            <constraint firstItem="eOn-Sl-9bm" firstAttribute="top" secondItem="91j-We-sF6" secondAttribute="bottom" constant="5" id="CEe-hh-BoJ"/>
+                            <constraint firstItem="gfX-CY-b2V" firstAttribute="leading" secondItem="iQA-aC-dk5" secondAttribute="trailing" constant="15" id="D5J-PZ-xmI"/>
+                            <constraint firstItem="pHA-su-lzK" firstAttribute="top" secondItem="ffC-h0-QO7" secondAttribute="bottom" constant="5" id="E4Y-LP-fvr"/>
+                            <constraint firstItem="R8d-wa-t30" firstAttribute="top" secondItem="aUa-Pf-6eo" secondAttribute="top" constant="20" id="Enz-xT-VwF"/>
+                            <constraint firstItem="oIr-JX-95x" firstAttribute="centerY" secondItem="vJo-i5-iFe" secondAttribute="centerY" id="FTP-iE-Ejq"/>
+                            <constraint firstItem="5P1-Ms-AA5" firstAttribute="leading" secondItem="qoB-rs-fWD" secondAttribute="trailing" constant="10" id="H4j-md-8B2"/>
+                            <constraint firstAttribute="trailing" secondItem="gfX-CY-b2V" secondAttribute="trailing" id="I7N-Ss-TnS"/>
+                            <constraint firstItem="R8d-wa-t30" firstAttribute="leading" secondItem="vJo-i5-iFe" secondAttribute="trailing" constant="15" id="LYX-wM-TcZ"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Yo5-lo-Xvh" secondAttribute="bottom" constant="15" id="Lh8-8f-c9w"/>
+                            <constraint firstItem="NfF-x7-YHZ" firstAttribute="top" secondItem="5P1-Ms-AA5" secondAttribute="bottom" constant="5" id="MiW-sf-9DK"/>
+                            <constraint firstItem="ffC-h0-QO7" firstAttribute="top" secondItem="07T-Ks-Xtg" secondAttribute="bottom" constant="15" id="Nhq-75-yqD"/>
+                            <constraint firstItem="NfF-x7-YHZ" firstAttribute="leading" secondItem="Yo5-lo-Xvh" secondAttribute="trailing" constant="10" id="OlL-FK-GAB"/>
+                            <constraint firstAttribute="trailing" secondItem="5P1-Ms-AA5" secondAttribute="trailing" constant="10" id="PVb-9W-jns"/>
+                            <constraint firstAttribute="trailing" secondItem="07T-Ks-Xtg" secondAttribute="trailing" id="PxM-3n-Cgw"/>
+                            <constraint firstItem="vJo-i5-iFe" firstAttribute="leading" secondItem="oIr-JX-95x" secondAttribute="trailing" constant="10" id="Rd5-kB-Vro"/>
+                            <constraint firstItem="91j-We-sF6" firstAttribute="leading" secondItem="3Gm-WO-hCx" secondAttribute="trailing" constant="10" id="RrU-7v-O0Z"/>
+                            <constraint firstItem="U6u-Wg-WvW" firstAttribute="centerY" secondItem="eOn-Sl-9bm" secondAttribute="centerY" id="Rtn-pZ-Jtt"/>
+                            <constraint firstItem="qoB-rs-fWD" firstAttribute="centerY" secondItem="5P1-Ms-AA5" secondAttribute="centerY" id="UGn-8E-7uj"/>
+                            <constraint firstItem="53G-eO-BHA" firstAttribute="centerY" secondItem="ffC-h0-QO7" secondAttribute="centerY" id="V66-mh-l5I"/>
+                            <constraint firstItem="gfX-CY-b2V" firstAttribute="top" secondItem="R8d-wa-t30" secondAttribute="bottom" constant="15" id="Wb1-ah-ThN"/>
+                            <constraint firstItem="vJo-i5-iFe" firstAttribute="centerY" secondItem="R8d-wa-t30" secondAttribute="centerY" id="YaE-BK-brs"/>
+                            <constraint firstItem="5P1-Ms-AA5" firstAttribute="top" secondItem="eOn-Sl-9bm" secondAttribute="bottom" constant="5" id="afK-QY-Ot0"/>
+                            <constraint firstItem="eOn-Sl-9bm" firstAttribute="leading" secondItem="U6u-Wg-WvW" secondAttribute="trailing" constant="10" id="b83-ed-sqY"/>
+                            <constraint firstItem="ffC-h0-QO7" firstAttribute="leading" secondItem="53G-eO-BHA" secondAttribute="trailing" constant="10" id="c9X-vh-iIv"/>
+                            <constraint firstItem="iQA-aC-dk5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aUa-Pf-6eo" secondAttribute="leading" id="dMp-Q3-JLv"/>
+                            <constraint firstItem="pHA-su-lzK" firstAttribute="leading" secondItem="ogI-Lv-g8Y" secondAttribute="trailing" constant="10" id="gJZ-lk-OBv"/>
+                            <constraint firstItem="ogI-Lv-g8Y" firstAttribute="leading" secondItem="53G-eO-BHA" secondAttribute="leading" id="hp3-MR-rpT"/>
+                            <constraint firstItem="pHA-su-lzK" firstAttribute="leading" secondItem="ogI-Lv-g8Y" secondAttribute="trailing" constant="10" id="iCx-k6-NOd"/>
+                            <constraint firstAttribute="trailing" secondItem="NfF-x7-YHZ" secondAttribute="trailing" constant="10" id="j8H-8a-YMA"/>
+                            <constraint firstItem="Yo5-lo-Xvh" firstAttribute="centerY" secondItem="NfF-x7-YHZ" secondAttribute="centerY" id="nfZ-LM-pwh"/>
+                            <constraint firstItem="ogI-Lv-g8Y" firstAttribute="centerY" secondItem="pHA-su-lzK" secondAttribute="centerY" id="wX4-FY-s4P"/>
+                            <constraint firstAttribute="trailing" secondItem="pHA-su-lzK" secondAttribute="trailing" constant="10" id="woj-Fl-CJZ"/>
+                            <constraint firstAttribute="trailing" secondItem="91j-We-sF6" secondAttribute="trailing" constant="10" id="yjZ-ZK-GNB"/>
+                            <constraint firstItem="oIr-JX-95x" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aUa-Pf-6eo" secondAttribute="leading" constant="10" id="zff-SF-6yw"/>
+                            <constraint firstAttribute="trailing" secondItem="ffC-h0-QO7" secondAttribute="trailing" constant="10" id="zjg-MS-Pke"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hp3-MR-rpT"/>
+                                <exclude reference="iCx-k6-NOd"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="aUa-Pf-6eo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="E1k-Yt-rEf"/>
+                    <constraint firstItem="aUa-Pf-6eo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="GYh-eZ-4N4"/>
+                    <constraint firstAttribute="trailing" secondItem="aUa-Pf-6eo" secondAttribute="trailing" constant="20" id="NaH-VP-ZK0"/>
+                    <constraint firstAttribute="bottom" secondItem="aUa-Pf-6eo" secondAttribute="bottom" id="y1p-Jt-Vso"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="deliveryLabel" destination="pHA-su-lzK" id="ZlV-St-CGd"/>
+                <outlet property="discountLabel" destination="eOn-Sl-9bm" id="q3g-Jf-giL"/>
+                <outlet property="scheduleDeliveryTimeButton" destination="07T-Ks-Xtg" id="Jpy-pz-baP"/>
+                <outlet property="sendAsGift" destination="iQA-aC-dk5" id="NTS-i1-htU"/>
+                <outlet property="subtotalLabel" destination="ffC-h0-QO7" id="AoK-Gi-gbO"/>
+                <outlet property="taxLabel" destination="91j-We-sF6" id="E8J-fK-hqd"/>
+                <outlet property="tipLabel" destination="5P1-Ms-AA5" id="aHJ-Ce-EUn"/>
+                <outlet property="tipPercentageSegment" destination="R8d-wa-t30" id="uhr-dN-NFD"/>
+                <outlet property="tipTextField" destination="vJo-i5-iFe" id="vTx-0v-sQx"/>
+                <outlet property="totalLabel" destination="NfF-x7-YHZ" id="Fet-23-Hsv"/>
+            </connections>
+            <point key="canvasLocation" x="417.5" y="377"/>
+        </tableViewCell>
+    </objects>
+</document>
