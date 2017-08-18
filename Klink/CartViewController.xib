@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Gotham-Bold-test.otf">
+            <string>Gotham-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CartViewController" customModule="Klink" customModuleProvider="target">
+            <connections>
+                <outlet property="cartEffectView" destination="fut-V7-Rdf" id="yvj-DE-7qQ"/>
+                <outlet property="cartLabel" destination="bnK-IC-9rc" id="fLz-qc-fw5"/>
+                <outlet property="spinner" destination="gqE-6Y-OU7" id="wrG-tP-GDV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fut-V7-Rdf">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="o1d-mh-dQc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cart-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wl2-Tu-QZE">
+                                <rect key="frame" x="20" y="290" width="24" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="6PT-dP-sO1"/>
+                                    <constraint firstAttribute="height" constant="21" id="slA-Yg-Yhb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHECKOUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnK-IC-9rc">
+                                <rect key="frame" x="50" y="292" width="500" height="15"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.75" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Qf-7m-Dqn">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.30588235294117649" green="0.30588235294117649" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="xHh-S6-YeL"/>
+                                </constraints>
+                            </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="gqE-6Y-OU7">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                                <animations/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <animations/>
+                        <constraints>
+                            <constraint firstItem="2Qf-7m-Dqn" firstAttribute="top" secondItem="o1d-mh-dQc" secondAttribute="top" id="8Mu-d0-qyJ"/>
+                            <constraint firstAttribute="trailing" secondItem="2Qf-7m-Dqn" secondAttribute="trailing" id="AtA-7x-7ML"/>
+                            <constraint firstItem="bnK-IC-9rc" firstAttribute="leading" secondItem="Wl2-Tu-QZE" secondAttribute="trailing" constant="45" id="Cef-vI-6rA"/>
+                            <constraint firstAttribute="centerY" secondItem="Wl2-Tu-QZE" secondAttribute="centerY" id="NP0-Ce-aOi"/>
+                            <constraint firstItem="gqE-6Y-OU7" firstAttribute="centerY" secondItem="o1d-mh-dQc" secondAttribute="centerY" id="PnI-9q-sjj"/>
+                            <constraint firstAttribute="trailing" secondItem="bnK-IC-9rc" secondAttribute="trailing" constant="50" id="PuQ-hJ-Bmd"/>
+                            <constraint firstItem="Wl2-Tu-QZE" firstAttribute="leading" secondItem="o1d-mh-dQc" secondAttribute="leading" constant="20" id="Smk-Zr-2o7"/>
+                            <constraint firstItem="2Qf-7m-Dqn" firstAttribute="leading" secondItem="Wl2-Tu-QZE" secondAttribute="trailing" id="Wm2-I9-VWI"/>
+                            <constraint firstItem="gqE-6Y-OU7" firstAttribute="centerX" secondItem="o1d-mh-dQc" secondAttribute="centerX" id="hLg-ZT-bWL"/>
+                            <constraint firstItem="bnK-IC-9rc" firstAttribute="leading" secondItem="o1d-mh-dQc" secondAttribute="leading" constant="50" id="kEY-Mc-d76"/>
+                            <constraint firstItem="2Qf-7m-Dqn" firstAttribute="leading" secondItem="o1d-mh-dQc" secondAttribute="leading" id="lmI-gA-Do7"/>
+                            <constraint firstAttribute="centerY" secondItem="bnK-IC-9rc" secondAttribute="centerY" constant="0.5" id="qgp-lX-XS4"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Wm2-I9-VWI"/>
+                                <exclude reference="Cef-vI-6rA"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="D9d-Ae-agL"/>
+                    </constraints>
+                    <blurEffect style="dark"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="D9d-Ae-agL"/>
+                        </mask>
+                    </variation>
+                </visualEffectView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fut-V7-Rdf" secondAttribute="trailing" id="8gf-dv-biK"/>
+                <constraint firstItem="fut-V7-Rdf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Arp-UT-XBe"/>
+                <constraint firstAttribute="bottom" secondItem="fut-V7-Rdf" secondAttribute="bottom" id="Iiq-ZI-CfX"/>
+                <constraint firstItem="fut-V7-Rdf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LSS-Sj-c1O"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="cart-icon.png" width="24" height="21"/>
+    </resources>
+</document>
