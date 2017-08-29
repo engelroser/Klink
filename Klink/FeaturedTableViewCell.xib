@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Gotham-Bold-test.otf">
+            <string>Gotham-Bold</string>
+        </mutableArray>
+        <mutableArray key="Gotham-Book.otf">
+            <string>Gotham-Book</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="322" id="KGk-i7-Jjw" customClass="FeaturedTableViewCell" customModule="Klink" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="422" height="322"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="422" height="321"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backdrop-image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rbn-bD-zTs">
+                        <rect key="frame" x="15" y="10" width="392" height="667"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="rbn-bD-zTs" secondAttribute="height" multiplier="1:1" id="9jT-UT-MpU"/>
+                            <constraint firstAttribute="height" constant="280" id="Js5-MH-6ID"/>
+                            <constraint firstAttribute="width" constant="422" id="ioT-i1-tqa"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Js5-MH-6ID"/>
+                                <exclude reference="ioT-i1-tqa"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ph1-wy-wPI" customClass="KLLabel" customModule="Klink" customModuleProvider="target">
+                        <rect key="frame" x="23" y="654" width="424" height="15"/>
+                        <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="15"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-Qg-jbr">
+                        <rect key="frame" x="23" y="628" width="424" height="18"/>
+                        <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="18"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="rbn-bD-zTs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Aew-pq-cmH"/>
+                    <constraint firstAttribute="bottom" secondItem="Ph1-wy-wPI" secondAttribute="bottom" constant="8" id="H1b-0Z-jBf"/>
+                    <constraint firstItem="KQZ-Qg-jbr" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="16" id="MnK-Me-Ib3"/>
+                    <constraint firstItem="KQZ-Qg-jbr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="T6W-6g-jT0"/>
+                    <constraint firstItem="Ph1-wy-wPI" firstAttribute="leading" secondItem="rbn-bD-zTs" secondAttribute="leading" constant="8" id="TRZ-Fr-2YU"/>
+                    <constraint firstAttribute="trailing" secondItem="KQZ-Qg-jbr" secondAttribute="trailing" constant="40" id="UuC-6L-Xez"/>
+                    <constraint firstItem="Ph1-wy-wPI" firstAttribute="top" secondItem="KQZ-Qg-jbr" secondAttribute="bottom" constant="8" id="bDj-LS-cVD"/>
+                    <constraint firstItem="KQZ-Qg-jbr" firstAttribute="leading" secondItem="rbn-bD-zTs" secondAttribute="leading" constant="8" id="elT-LR-Njw"/>
+                    <constraint firstItem="Ph1-wy-wPI" firstAttribute="trailing" secondItem="rbn-bD-zTs" secondAttribute="trailing" constant="40" id="lBK-Sp-Ghv"/>
+                    <constraint firstItem="Ph1-wy-wPI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="lHm-L8-rnt"/>
+                    <constraint firstAttribute="trailing" secondItem="Ph1-wy-wPI" secondAttribute="trailing" constant="40" id="meQ-IP-GNF"/>
+                    <constraint firstItem="rbn-bD-zTs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="nBH-Cq-PdT"/>
+                    <constraint firstAttribute="trailing" secondItem="rbn-bD-zTs" secondAttribute="trailing" constant="15" id="noc-es-Wua"/>
+                    <constraint firstItem="Ph1-wy-wPI" firstAttribute="bottom" secondItem="rbn-bD-zTs" secondAttribute="bottom" constant="-8" id="s2z-mD-X70"/>
+                    <constraint firstItem="KQZ-Qg-jbr" firstAttribute="trailing" secondItem="rbn-bD-zTs" secondAttribute="trailing" constant="40" id="tea-5k-Wqx"/>
+                    <constraint firstAttribute="bottom" secondItem="rbn-bD-zTs" secondAttribute="bottom" constant="10" id="uWS-Z5-nY1"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="T6W-6g-jT0"/>
+                        <exclude reference="UuC-6L-Xez"/>
+                        <exclude reference="H1b-0Z-jBf"/>
+                        <exclude reference="lHm-L8-rnt"/>
+                        <exclude reference="meQ-IP-GNF"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="414" y="400"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="backdrop-image.jpg" width="375" height="667"/>
+    </resources>
+</document>
