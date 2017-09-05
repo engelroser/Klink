@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ItemCardViewController" customModule="Klink" customModuleProvider="target">
+            <connections>
+                <outlet property="cartContainer" destination="7DU-Hv-dlg" id="uYg-bp-EJr"/>
+                <outlet property="tableView" destination="sVJ-hS-6aP" id="JFb-nd-aS6"/>
+                <outlet property="tableViewBottomConstraint" destination="ii0-ma-0bu" id="9WV-hY-pfv"/>
+                <outlet property="tableViewWidthConstraint" destination="jOi-lp-HCV" id="G57-V1-UOb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="sVJ-hS-6aP">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="jOi-lp-HCV"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="jOi-lp-HCV"/>
+                        </mask>
+                    </variation>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7DU-Hv-dlg" userLabel="cart container">
+                    <rect key="frame" x="0.0" y="552" width="600" height="48"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="l12-kl-seo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="sVJ-hS-6aP" secondAttribute="centerX" id="0iV-Dx-MSU"/>
+                <constraint firstAttribute="trailing" secondItem="sVJ-hS-6aP" secondAttribute="trailing" id="FtL-qj-LGr"/>
+                <constraint firstItem="sVJ-hS-6aP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="H3x-SF-luX"/>
+                <constraint firstItem="sVJ-hS-6aP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QZg-je-9s7"/>
+                <constraint firstAttribute="bottom" secondItem="7DU-Hv-dlg" secondAttribute="bottom" id="X9C-of-hm2"/>
+                <constraint firstAttribute="centerX" secondItem="sVJ-hS-6aP" secondAttribute="centerX" id="YHP-AQ-V5D"/>
+                <constraint firstAttribute="trailing" secondItem="7DU-Hv-dlg" secondAttribute="trailing" id="ejI-SF-ZPK"/>
+                <constraint firstItem="sVJ-hS-6aP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hoA-cI-B74"/>
+                <constraint firstAttribute="bottom" secondItem="sVJ-hS-6aP" secondAttribute="bottom" id="ii0-ma-0bu"/>
+                <constraint firstAttribute="trailing" secondItem="sVJ-hS-6aP" secondAttribute="trailing" id="jTI-3z-0n2"/>
+                <constraint firstItem="7DU-Hv-dlg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oql-er-2hM"/>
+                <constraint firstAttribute="trailing" secondItem="sVJ-hS-6aP" secondAttribute="trailing" id="zRc-RC-bBt"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="FtL-qj-LGr"/>
+                    <exclude reference="H3x-SF-luX"/>
+                    <exclude reference="YHP-AQ-V5D"/>
+                    <exclude reference="jTI-3z-0n2"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
