@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Gotham-Book.otf">
+            <string>Gotham-Book</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KlinkAlertView" customModule="Klink" customModuleProvider="target">
+            <connections>
+                <outlet property="messageLabel" destination="4MP-al-XLu" id="L6i-GU-5KA"/>
+                <outlet property="spinner" destination="p3D-1r-gSB" id="WFz-2Y-ne9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4MP-al-XLu" customClass="KLLabel" customModule="Klink" customModuleProvider="target">
+                    <rect key="frame" x="18" y="300" width="564" height="0.0"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="p3D-1r-gSB">
+                    <rect key="frame" x="290" y="290" width="20" height="20"/>
+                    <animations/>
+                </activityIndicatorView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="p3D-1r-gSB" secondAttribute="centerY" id="4hM-Hc-oYB"/>
+                <constraint firstAttribute="trailing" secondItem="p3D-1r-gSB" secondAttribute="trailing" constant="20" id="8XL-WA-dgL"/>
+                <constraint firstItem="4MP-al-XLu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="GaW-xd-Rwj"/>
+                <constraint firstItem="4MP-al-XLu" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="T7H-Fr-dmT"/>
+                <constraint firstAttribute="centerX" secondItem="p3D-1r-gSB" secondAttribute="centerX" id="dW7-Xh-T0J"/>
+                <constraint firstItem="p3D-1r-gSB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="hNg-4f-e26"/>
+                <constraint firstAttribute="centerX" secondItem="4MP-al-XLu" secondAttribute="centerX" id="iuQ-b2-gJn"/>
+                <constraint firstAttribute="trailing" secondItem="4MP-al-XLu" secondAttribute="trailing" constant="18" id="kgY-aO-dD8"/>
+                <constraint firstItem="4MP-al-XLu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="ub4-SA-WBi"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="GaW-xd-Rwj"/>
+                    <exclude reference="8XL-WA-dgL"/>
+                    <exclude reference="hNg-4f-e26"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
