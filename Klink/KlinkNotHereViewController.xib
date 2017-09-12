@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Gotham-BookItalic.otf">
+            <string>Gotham-BookItalic</string>
+        </mutableArray>
+        <mutableArray key="Gotham-Medium.otf">
+            <string>Gotham-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KlinkNotHereViewController" customModule="Klink" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="M9g-eX-mi6" id="Qmk-AP-jM2"/>
+                <outlet property="emailTextField" destination="oa4-kO-t2g" id="3JZ-af-vOP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="M9g-eX-mi6" userLabel="container">
+                    <rect key="frame" x="0.0" y="191" width="600" height="219"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER YOUR EMAIL ADDRESS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wET-DK-n83">
+                            <rect key="frame" x="38" y="30" width="524" height="16"/>
+                            <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="16"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZqI-5A-fmI">
+                            <rect key="frame" x="569" y="14" width="17" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="17" id="7MQ-CU-AEX"/>
+                                <constraint firstAttribute="width" constant="17" id="GKe-kq-KEF"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="close-cart.png"/>
+                            <connections>
+                                <action selector="dismissPressed:" destination="-1" eventType="touchUpInside" id="ie0-3K-PSr"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We’ll notify you as soon as Klink becomes available on your location" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pd8-J1-CG5">
+                            <rect key="frame" x="20" y="56" width="560" height="12"/>
+                            <fontDescription key="fontDescription" name="Gotham-BookItalic" family="Gotham" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTW-Wx-nd1">
+                            <rect key="frame" x="0.0" y="88" width="600" height="1"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="aBp-RO-Xjn"/>
+                            </constraints>
+                        </view>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oa4-kO-t2g" customClass="KlinkDarkTextField" customModule="Klink" customModuleProvider="target">
+                            <rect key="frame" x="15" y="89" width="570" height="49"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="49" id="cS1-Js-xTT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y9d-Tp-dKT">
+                            <rect key="frame" x="0.0" y="138" width="600" height="1"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="0aC-hI-NXQ"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f84-Vn-a9h" customClass="KlinkOrangeButton" customModule="Klink" customModuleProvider="target">
+                            <rect key="frame" x="267" y="169" width="67" height="30"/>
+                            <state key="normal" title="Notify me"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="pd8-J1-CG5" firstAttribute="leading" secondItem="M9g-eX-mi6" secondAttribute="leading" constant="20" id="7Md-HZ-Ynn"/>
+                        <constraint firstAttribute="trailing" secondItem="wET-DK-n83" secondAttribute="trailing" constant="38" id="9i1-au-2PH"/>
+                        <constraint firstItem="wET-DK-n83" firstAttribute="leading" secondItem="M9g-eX-mi6" secondAttribute="leading" constant="38" id="Pkc-Tm-8d6"/>
+                        <constraint firstAttribute="trailing" secondItem="pd8-J1-CG5" secondAttribute="trailing" constant="20" id="RKG-H8-dxv"/>
+                        <constraint firstItem="oa4-kO-t2g" firstAttribute="top" secondItem="vTW-Wx-nd1" secondAttribute="bottom" id="VRJ-qo-TC3"/>
+                        <constraint firstItem="Y9d-Tp-dKT" firstAttribute="leading" secondItem="M9g-eX-mi6" secondAttribute="leading" id="ach-eO-zca"/>
+                        <constraint firstAttribute="trailing" secondItem="oa4-kO-t2g" secondAttribute="trailing" constant="15" id="amQ-gJ-tAV"/>
+                        <constraint firstItem="vTW-Wx-nd1" firstAttribute="top" secondItem="pd8-J1-CG5" secondAttribute="bottom" constant="20" id="bl9-Se-Kxs"/>
+                        <constraint firstAttribute="trailing" secondItem="ZqI-5A-fmI" secondAttribute="trailing" constant="14" id="cHJ-gn-VEd"/>
+                        <constraint firstItem="oa4-kO-t2g" firstAttribute="leading" secondItem="M9g-eX-mi6" secondAttribute="leading" constant="15" id="dqi-Kl-b5J"/>
+                        <constraint firstItem="f84-Vn-a9h" firstAttribute="centerX" secondItem="M9g-eX-mi6" secondAttribute="centerX" id="gjl-jy-jMz"/>
+                        <constraint firstItem="Y9d-Tp-dKT" firstAttribute="top" secondItem="oa4-kO-t2g" secondAttribute="bottom" id="gvX-sM-0at"/>
+                        <constraint firstAttribute="bottom" secondItem="Y9d-Tp-dKT" secondAttribute="bottom" constant="20" id="hJb-Xe-lcR"/>
+                        <constraint firstAttribute="trailing" secondItem="Y9d-Tp-dKT" secondAttribute="trailing" id="i8Z-sx-283"/>
+                        <constraint firstItem="vTW-Wx-nd1" firstAttribute="leading" secondItem="M9g-eX-mi6" secondAttribute="leading" id="or5-XL-oDg"/>
+                        <constraint firstItem="wET-DK-n83" firstAttribute="top" secondItem="M9g-eX-mi6" secondAttribute="top" constant="30" id="sIZ-kW-IeG"/>
+                        <constraint firstItem="ZqI-5A-fmI" firstAttribute="top" secondItem="M9g-eX-mi6" secondAttribute="top" constant="14" id="u4b-uX-f9Y"/>
+                        <constraint firstAttribute="trailing" secondItem="vTW-Wx-nd1" secondAttribute="trailing" id="xHX-2S-ISq"/>
+                        <constraint firstItem="f84-Vn-a9h" firstAttribute="top" secondItem="Y9d-Tp-dKT" secondAttribute="bottom" constant="30" id="xKw-fw-sPM"/>
+                        <constraint firstItem="pd8-J1-CG5" firstAttribute="top" secondItem="wET-DK-n83" secondAttribute="bottom" constant="10" id="xte-Gd-H5F"/>
+                        <constraint firstAttribute="bottom" secondItem="f84-Vn-a9h" secondAttribute="bottom" constant="20" id="zVJ-x2-YwB"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="hJb-Xe-lcR"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="M9g-eX-mi6" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="MRC-EL-YNs"/>
+                <constraint firstItem="M9g-eX-mi6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="d5o-WW-YY1"/>
+                <constraint firstAttribute="trailing" secondItem="M9g-eX-mi6" secondAttribute="trailing" id="ucW-7W-Uoq"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="close-cart.png" width="36" height="36"/>
+    </resources>
+</document>
