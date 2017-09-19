@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Gotham-Book.otf">
+            <string>Gotham-Book</string>
+            <string>Gotham-Book</string>
+            <string>Gotham-Book</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuHeaderView" customModule="Klink" customModuleProvider="target">
+            <connections>
+                <outlet property="editAddressButton" destination="D5O-66-QxG" id="lLG-Qq-e4r"/>
+                <outlet property="showHideHoursButton" destination="z4P-7B-7w8" id="zzS-CO-O0i"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" placeholderIntrinsicWidth="600" placeholderIntrinsicHeight="600" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="180"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="DELIVERING TO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKw-Od-F8G" customClass="KLLabel" customModule="Klink" customModuleProvider="target">
+                    <rect key="frame" x="30" y="45" width="510" height="15"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDt-aP-nfP" customClass="KLLabel" customModule="Klink" customModuleProvider="target">
+                    <rect key="frame" x="30" y="65" width="450" height="29"/>
+                    <animations/>
+                    <string key="text">123 Main Street,
+City, ST 12345</string>
+                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4P-7B-7w8">
+                    <rect key="frame" x="126" y="117" width="104" height="24"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="12"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Show store hours"/>
+                </button>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wqe-1M-vjX">
+                    <rect key="frame" x="0.0" y="149" width="600" height="1"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="ZDZ-QU-JsN"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lN6-QH-ggL">
+                    <rect key="frame" x="0.0" y="150" width="600" height="0.0"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7jW-Sn-wKD">
+                            <rect key="frame" x="0.0" y="-1" width="600" height="1"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Xuc-Z9-VHP"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="7jW-Sn-wKD" secondAttribute="bottom" id="49b-7d-sWD"/>
+                        <constraint firstAttribute="trailing" secondItem="7jW-Sn-wKD" secondAttribute="trailing" id="Dix-wD-Pty"/>
+                        <constraint firstItem="7jW-Sn-wKD" firstAttribute="leading" secondItem="lN6-QH-ggL" secondAttribute="leading" id="WA4-BN-XtN"/>
+                        <constraint firstAttribute="height" id="b3Z-pJ-KIn"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D5O-66-QxG">
+                    <rect key="frame" x="30" y="114" width="81" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="aDY-kK-1nN"/>
+                        <constraint firstAttribute="width" constant="81" id="zaB-te-dhm"/>
+                    </constraints>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Edit Address">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="12" name="Gotham-Book"/>
+                                    <integer key="NSUnderline" value="1"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.12941176470588234" green="0.14901960784313725" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="lN6-QH-ggL" secondAttribute="bottom" id="1Cj-e0-TgJ"/>
+                <constraint firstItem="z4P-7B-7w8" firstAttribute="centerY" secondItem="D5O-66-QxG" secondAttribute="centerY" id="1RH-By-FBC"/>
+                <constraint firstItem="z4P-7B-7w8" firstAttribute="leading" secondItem="D5O-66-QxG" secondAttribute="trailing" constant="15" id="77v-fB-6Sm"/>
+                <constraint firstItem="lN6-QH-ggL" firstAttribute="top" secondItem="wqe-1M-vjX" secondAttribute="bottom" id="EIH-jx-0yi"/>
+                <constraint firstItem="lN6-QH-ggL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="I4o-A5-9gF"/>
+                <constraint firstItem="wqe-1M-vjX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Kff-a6-a0u"/>
+                <constraint firstAttribute="trailing" secondItem="JDt-aP-nfP" secondAttribute="trailing" constant="120" id="Sy3-1H-DnE"/>
+                <constraint firstAttribute="trailing" secondItem="wqe-1M-vjX" secondAttribute="trailing" id="Wct-Fh-JE0"/>
+                <constraint firstAttribute="trailing" secondItem="lN6-QH-ggL" secondAttribute="trailing" id="WjQ-RV-H9U"/>
+                <constraint firstAttribute="bottom" secondItem="lN6-QH-ggL" secondAttribute="bottom" id="XQW-vO-kr2"/>
+                <constraint firstAttribute="trailing" secondItem="CKw-Od-F8G" secondAttribute="trailing" constant="60" id="aCe-kU-Eky"/>
+                <constraint firstAttribute="bottom" secondItem="lN6-QH-ggL" secondAttribute="bottom" id="eK0-fq-XJh"/>
+                <constraint firstItem="CKw-Od-F8G" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="45" id="hHh-bc-54j"/>
+                <constraint firstItem="D5O-66-QxG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="hyq-oQ-h0Z"/>
+                <constraint firstItem="wqe-1M-vjX" firstAttribute="top" secondItem="z4P-7B-7w8" secondAttribute="bottom" constant="8" id="pfr-ez-D7R"/>
+                <constraint firstItem="CKw-Od-F8G" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="rod-VD-54f"/>
+                <constraint firstItem="D5O-66-QxG" firstAttribute="top" secondItem="JDt-aP-nfP" secondAttribute="bottom" constant="20" id="tuH-Lj-1f2"/>
+                <constraint firstItem="JDt-aP-nfP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="vLZ-NE-27r"/>
+                <constraint firstItem="JDt-aP-nfP" firstAttribute="top" secondItem="CKw-Od-F8G" secondAttribute="bottom" constant="5" id="wvQ-Nz-Bnd"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="1Cj-e0-TgJ"/>
+                    <exclude reference="XQW-vO-kr2"/>
+                    <exclude reference="eK0-fq-XJh"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="349" y="121"/>
+        </view>
+    </objects>
+</document>
