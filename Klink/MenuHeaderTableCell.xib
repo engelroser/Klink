@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Gotham-Book.otf">
+            <string>Gotham-Book</string>
+            <string>Gotham-Book</string>
+            <string>Gotham-Book</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="161" id="KGk-i7-Jjw" customClass="MenuHeaderTableCell" customModule="Klink" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="448" height="161"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="448" height="160"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DELIVERING TO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2uQ-Nr-KqH" customClass="KLLabel" customModule="Klink" customModuleProvider="target">
+                        <rect key="frame" x="30" y="30" width="358" height="15"/>
+                        <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="14"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5EZ-a7-Srn" customClass="KLLabel" customModule="Klink" customModuleProvider="target">
+                        <rect key="frame" x="30" y="50" width="358" height="29"/>
+                        <string key="text">123 Main Street,
+City, ST 12345</string>
+                        <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="14"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fRC-Xy-dGK">
+                        <rect key="frame" x="30" y="99" width="81" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="81" id="f8C-PT-rA7"/>
+                            <constraint firstAttribute="height" constant="30" id="hfC-E0-kVg"/>
+                        </constraints>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal">
+                            <attributedString key="attributedTitle">
+                                <fragment content="Edit Address">
+                                    <attributes>
+                                        <color key="NSColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" metaFont="cellTitle"/>
+                                        <integer key="NSUnderline" value="1"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                        </state>
+                        <connections>
+                            <action selector="editAddressPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="YcK-WU-Lh8"/>
+                        </connections>
+                    </button>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ooz-KF-yMD">
+                        <rect key="frame" x="126" y="99" width="104" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="wc4-sj-BG2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="12"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" title="Show store hours"/>
+                        <connections>
+                            <action selector="showStoreHoursPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="OVt-fH-6va"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ift-fc-HgQ">
+                        <rect key="frame" x="0.0" y="139" width="448" height="1"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="WpC-GX-0tS"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7uR-UD-Igp">
+                        <rect key="frame" x="0.0" y="140" width="448" height="0.0"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tQv-f5-InJ">
+                                <rect key="frame" x="0.0" y="-1" width="448" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="1Lr-fZ-wTn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.4039215686" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tQv-f5-InJ" secondAttribute="trailing" id="5sD-ar-6el"/>
+                            <constraint firstAttribute="height" id="c2F-lt-f0I"/>
+                            <constraint firstAttribute="bottom" secondItem="tQv-f5-InJ" secondAttribute="bottom" id="kZd-Lt-VQu"/>
+                            <constraint firstItem="tQv-f5-InJ" firstAttribute="leading" secondItem="7uR-UD-Igp" secondAttribute="leading" id="m9q-dN-uY5"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ueR-Z8-k2Z">
+                        <rect key="frame" x="0.0" y="140" width="448" height="20"/>
+                        <color key="backgroundColor" red="0.10588235294117647" green="0.11372549019607843" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="KhP-TR-TPP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.12941176470588234" green="0.14901960784313725" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="7uR-UD-Igp" secondAttribute="bottom" id="1Fy-Zs-M0J"/>
+                    <constraint firstItem="ift-fc-HgQ" firstAttribute="top" secondItem="ooz-KF-yMD" secondAttribute="bottom" constant="10" id="4a2-tW-b1W"/>
+                    <constraint firstItem="7uR-UD-Igp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AnX-gj-pzv"/>
+                    <constraint firstItem="5EZ-a7-Srn" firstAttribute="top" secondItem="2uQ-Nr-KqH" secondAttribute="bottom" constant="5" id="B8d-Ez-KJI"/>
+                    <constraint firstItem="ueR-Z8-k2Z" firstAttribute="top" secondItem="7uR-UD-Igp" secondAttribute="bottom" id="FMd-hw-jFr"/>
+                    <constraint firstItem="5EZ-a7-Srn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="Fag-D1-t7M"/>
+                    <constraint firstAttribute="trailing" secondItem="ueR-Z8-k2Z" secondAttribute="trailing" id="Ih2-IT-biB"/>
+                    <constraint firstAttribute="trailing" secondItem="7uR-UD-Igp" secondAttribute="trailing" id="NeW-mk-iSW"/>
+                    <constraint firstItem="ooz-KF-yMD" firstAttribute="leading" secondItem="fRC-Xy-dGK" secondAttribute="trailing" constant="15" id="Nmr-42-v4J"/>
+                    <constraint firstItem="7uR-UD-Igp" firstAttribute="top" secondItem="ift-fc-HgQ" secondAttribute="bottom" id="TVR-4X-Eus"/>
+                    <constraint firstAttribute="bottom" secondItem="ueR-Z8-k2Z" secondAttribute="bottom" id="Y9b-Nq-chL"/>
+                    <constraint firstAttribute="trailing" secondItem="5EZ-a7-Srn" secondAttribute="trailing" constant="60" id="aht-Ii-dpq"/>
+                    <constraint firstItem="2uQ-Nr-KqH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="auD-YU-cle"/>
+                    <constraint firstItem="ift-fc-HgQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="j2L-MB-pr4"/>
+                    <constraint firstItem="ueR-Z8-k2Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kNv-zI-VSA"/>
+                    <constraint firstAttribute="trailing" secondItem="ift-fc-HgQ" secondAttribute="trailing" id="q7c-RR-KFy"/>
+                    <constraint firstItem="fRC-Xy-dGK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="ruh-sf-9Oy"/>
+                    <constraint firstItem="2uQ-Nr-KqH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="tdl-Te-C66"/>
+                    <constraint firstItem="fRC-Xy-dGK" firstAttribute="top" secondItem="5EZ-a7-Srn" secondAttribute="bottom" constant="20" id="wiX-tJ-kXO"/>
+                    <constraint firstItem="ooz-KF-yMD" firstAttribute="centerY" secondItem="fRC-Xy-dGK" secondAttribute="centerY" id="wwA-9q-ByP"/>
+                    <constraint firstAttribute="trailing" secondItem="2uQ-Nr-KqH" secondAttribute="trailing" constant="60" id="xk0-RL-YB9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="deliveringAddressLabel" destination="5EZ-a7-Srn" id="Kzj-pk-5jA"/>
+                <outlet property="deliveringTitleLabel" destination="2uQ-Nr-KqH" id="XxM-yT-DUF"/>
+                <outlet property="editAddressButton" destination="fRC-Xy-dGK" id="Rfm-I3-Mrc"/>
+                <outlet property="storeHoursButton" destination="ooz-KF-yMD" id="a9k-p0-3Sg"/>
+            </connections>
+            <point key="canvasLocation" x="430" y="273.5"/>
+        </tableViewCell>
+    </objects>
+</document>
