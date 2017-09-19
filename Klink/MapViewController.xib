@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Gotham-Book.otf">
+            <string>Gotham-Book</string>
+            <string>Gotham-Book</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController" customModule="Klink" customModuleProvider="target">
+            <connections>
+                <outlet property="daysHolderView" destination="GEa-hG-iMj" id="fxC-nd-efd"/>
+                <outlet property="mapView" destination="Cd3-Zb-q0C" id="ozo-uE-wty"/>
+                <outlet property="orderArrowImageView" destination="QAw-WP-N4J" id="y1N-HF-rkK"/>
+                <outlet property="orderContainerView" destination="G0L-qf-h7n" id="OFx-Sk-GWg"/>
+                <outlet property="orderLabel" destination="jpG-Dk-utt" id="OcS-KP-ZfM"/>
+                <outlet property="spinner" destination="NiA-hw-EGT" id="UQO-dW-9Fd"/>
+                <outlet property="storeHoursDaysHolderView" destination="MbX-5Z-tmT" id="RWJ-UC-Q08"/>
+                <outlet property="storeHoursHolderViewBottomConstraint" destination="Oju-iY-U7G" id="icM-Ku-C0a"/>
+                <outlet property="storeHoursView" destination="bbF-Le-B4B" id="As5-3X-B9B"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewStoreHoursLabel" destination="TQw-tE-vh1" id="w5W-LF-Lwe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cd3-Zb-q0C" customClass="GMSMapView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ble-3D-Up2" userLabel="gradient view" customClass="MapGradientView" customModule="Klink" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="435" width="600" height="120"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="iVl-2f-3iq"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbF-Le-B4B" userLabel="store hours view">
+                    <rect key="frame" x="0.0" y="510" width="600" height="205"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3b5-H9-g2V" userLabel="header">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="45"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Store Hours" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQw-tE-vh1">
+                                    <rect key="frame" x="244" y="16" width="112" height="13"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="13"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="centerY" secondItem="TQw-tE-vh1" secondAttribute="centerY" id="9W8-M9-oZY"/>
+                                <constraint firstAttribute="centerX" secondItem="TQw-tE-vh1" secondAttribute="centerX" id="Ht4-Vc-dRV"/>
+                                <constraint firstAttribute="height" constant="45" id="nFv-vW-5Mt"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="Q58-Ah-oKq" appends="YES" id="San-Ap-ZC7"/>
+                            </connections>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GEa-hG-iMj" userLabel="days holder">
+                            <rect key="frame" x="200" y="45" width="200" height="160"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n6v-OE-CDl" userLabel="top border">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="1"/>
+                                    <animations/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="WEJ-PH-GgZ"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MbX-5Z-tmT" userLabel="StoreHoursView holder">
+                                    <rect key="frame" x="0.0" y="16" width="200" height="140"/>
+                                    <animations/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="140" id="qCX-Sw-mft"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="MbX-5Z-tmT" firstAttribute="leading" secondItem="GEa-hG-iMj" secondAttribute="leading" id="10h-dC-sOM"/>
+                                <constraint firstItem="n6v-OE-CDl" firstAttribute="top" secondItem="GEa-hG-iMj" secondAttribute="top" id="4h7-lG-Hkp"/>
+                                <constraint firstAttribute="trailing" secondItem="MbX-5Z-tmT" secondAttribute="trailing" id="4jV-gk-2VX"/>
+                                <constraint firstItem="n6v-OE-CDl" firstAttribute="leading" secondItem="GEa-hG-iMj" secondAttribute="leading" id="8A9-un-UHG"/>
+                                <constraint firstItem="MbX-5Z-tmT" firstAttribute="top" secondItem="n6v-OE-CDl" secondAttribute="bottom" constant="15" id="BGO-zQ-kgm"/>
+                                <constraint firstAttribute="trailing" secondItem="n6v-OE-CDl" secondAttribute="trailing" id="Fe9-hb-yTB"/>
+                                <constraint firstAttribute="width" constant="200" id="c82-CH-1ar"/>
+                                <constraint firstAttribute="height" constant="160" id="oXr-ZJ-4NY"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="GEa-hG-iMj" firstAttribute="top" secondItem="3b5-H9-g2V" secondAttribute="bottom" id="2Ir-9f-v2C"/>
+                        <constraint firstAttribute="centerX" secondItem="GEa-hG-iMj" secondAttribute="centerX" id="AEV-aW-Mcx"/>
+                        <constraint firstItem="3b5-H9-g2V" firstAttribute="leading" secondItem="bbF-Le-B4B" secondAttribute="leading" id="Ax7-D3-4uS"/>
+                        <constraint firstItem="GEa-hG-iMj" firstAttribute="leading" secondItem="bbF-Le-B4B" secondAttribute="leading" constant="30" id="W41-lH-ZwJ"/>
+                        <constraint firstItem="3b5-H9-g2V" firstAttribute="top" secondItem="bbF-Le-B4B" secondAttribute="top" id="Wu9-bo-TEW"/>
+                        <constraint firstAttribute="trailing" secondItem="GEa-hG-iMj" secondAttribute="trailing" constant="30" id="hzu-Hi-s33"/>
+                        <constraint firstAttribute="trailing" secondItem="3b5-H9-g2V" secondAttribute="trailing" id="l8h-Wh-Kba"/>
+                        <constraint firstAttribute="height" constant="205" id="lIE-j3-OxA"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="W41-lH-ZwJ"/>
+                            <exclude reference="hzu-Hi-s33"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G0L-qf-h7n" userLabel="bottom button view">
+                    <rect key="frame" x="0.0" y="555" width="600" height="45"/>
+                    <subviews>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="order-status-arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="QAw-WP-N4J">
+                            <rect key="frame" x="571" y="15" width="9" height="16"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="G3T-Uk-ZJ2"/>
+                                <constraint firstAttribute="width" constant="9" id="rIE-Ez-Z17"/>
+                            </constraints>
+                        </imageView>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STORE IS CLOSED. BROWSE ANYWAY?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpG-Dk-utt" customClass="KLLabel" customModule="Klink" customModuleProvider="target">
+                            <rect key="frame" x="170" y="16" width="260" height="13"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="13"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="NiA-hw-EGT">
+                            <rect key="frame" x="290" y="13" width="20" height="20"/>
+                            <animations/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="0.43529411764705883" green="0.45882352941176469" blue="0.47843137254901957" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="centerY" secondItem="QAw-WP-N4J" secondAttribute="centerY" id="1fe-bn-I3e"/>
+                        <constraint firstAttribute="height" constant="45" id="7bH-Bp-01o"/>
+                        <constraint firstAttribute="centerX" secondItem="jpG-Dk-utt" secondAttribute="centerX" id="Zu5-4D-nSR"/>
+                        <constraint firstAttribute="centerY" secondItem="NiA-hw-EGT" secondAttribute="centerY" constant="-0.5" id="fL5-6t-HzV"/>
+                        <constraint firstAttribute="trailing" secondItem="QAw-WP-N4J" secondAttribute="trailing" constant="20" id="fui-ai-YyZ"/>
+                        <constraint firstAttribute="centerY" secondItem="jpG-Dk-utt" secondAttribute="centerY" id="kJB-xf-QUy"/>
+                        <constraint firstAttribute="centerX" secondItem="NiA-hw-EGT" secondAttribute="centerX" id="tfo-TZ-BKj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Cd3-Zb-q0C" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3m1-yB-Fdo"/>
+                <constraint firstItem="G0L-qf-h7n" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9lP-CQ-ZSv"/>
+                <constraint firstItem="Cd3-Zb-q0C" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Hkd-Kf-rff"/>
+                <constraint firstItem="bbF-Le-B4B" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="I8u-C3-ych"/>
+                <constraint firstAttribute="bottom" secondItem="bbF-Le-B4B" secondAttribute="bottom" constant="-115" id="Oju-iY-U7G"/>
+                <constraint firstAttribute="trailing" secondItem="G0L-qf-h7n" secondAttribute="trailing" id="P2i-By-Xrb"/>
+                <constraint firstItem="G0L-qf-h7n" firstAttribute="top" secondItem="ble-3D-Up2" secondAttribute="bottom" id="Sc4-Yg-2Vp"/>
+                <constraint firstAttribute="trailing" secondItem="bbF-Le-B4B" secondAttribute="trailing" id="d2f-xh-eZK"/>
+                <constraint firstAttribute="bottom" secondItem="G0L-qf-h7n" secondAttribute="bottom" id="eMu-pb-MCg"/>
+                <constraint firstItem="ble-3D-Up2" firstAttribute="top" secondItem="bbF-Le-B4B" secondAttribute="bottom" constant="-120" id="i3q-eE-f5n"/>
+                <constraint firstAttribute="trailing" secondItem="Cd3-Zb-q0C" secondAttribute="trailing" id="osf-tu-MfY"/>
+                <constraint firstItem="ble-3D-Up2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pFt-IN-OdF"/>
+                <constraint firstAttribute="trailing" secondItem="ble-3D-Up2" secondAttribute="trailing" id="rxX-LE-40l"/>
+                <constraint firstAttribute="bottom" secondItem="Cd3-Zb-q0C" secondAttribute="bottom" id="zPX-DA-cBf"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="i3q-eE-f5n"/>
+                </mask>
+            </variation>
+        </view>
+        <tapGestureRecognizer id="Q58-Ah-oKq">
+            <connections>
+                <action selector="storeHoursHolderViewTapped:" destination="-1" id="5uN-9P-Zab"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="order-status-arrow.png" width="9" height="16"/>
+    </resources>
+</document>
