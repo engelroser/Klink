@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Gotham-Book.otf">
+            <string>Gotham-Book</string>
+            <string>Gotham-Book</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MenuTableViewCell" customModule="Klink" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSU-b9-Siq" customClass="KLLabel" customModule="Klink" customModuleProvider="target">
+                        <rect key="frame" x="30" y="12" width="260" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="21"/>
+                        <color key="textColor" red="0.6588235294117647" green="0.6588235294117647" blue="0.6588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3WJ-6N-NRo" customClass="KLLabel" customModule="Klink" customModuleProvider="target">
+                        <rect key="frame" x="32" y="36" width="258" height="8"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="13"/>
+                        <color key="textColor" red="0.6588235294" green="0.6588235294" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" red="0.1058823529" green="0.1137254902" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="3WJ-6N-NRo" secondAttribute="bottom" constant="5" id="03d-e0-XBu"/>
+                    <constraint firstItem="3WJ-6N-NRo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="4Hp-Qn-Z8k"/>
+                    <constraint firstItem="3WJ-6N-NRo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="EYP-9r-p9y"/>
+                    <constraint firstItem="iSU-b9-Siq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="FKK-hX-TKu"/>
+                    <constraint firstAttribute="trailing" secondItem="iSU-b9-Siq" secondAttribute="trailing" constant="30" id="MWu-QD-OKD"/>
+                    <constraint firstAttribute="centerY" secondItem="iSU-b9-Siq" secondAttribute="centerY" id="OjM-DU-IY9"/>
+                    <constraint firstItem="3WJ-6N-NRo" firstAttribute="top" secondItem="iSU-b9-Siq" secondAttribute="bottom" constant="3" id="Qj0-78-ikA"/>
+                    <constraint firstItem="iSU-b9-Siq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="TkB-dM-4ZH"/>
+                    <constraint firstAttribute="trailing" secondItem="3WJ-6N-NRo" secondAttribute="trailing" constant="30" id="bJj-Xe-0lo"/>
+                    <constraint firstItem="iSU-b9-Siq" firstAttribute="leading" secondItem="3WJ-6N-NRo" secondAttribute="leading" constant="-2" id="qxH-q1-X9Y"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="OjM-DU-IY9"/>
+                        <exclude reference="4Hp-Qn-Z8k"/>
+                        <exclude reference="EYP-9r-p9y"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" red="0.1058823529" green="0.1137254902" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="descLabel" destination="3WJ-6N-NRo" id="VZr-Su-OPT"/>
+                <outlet property="titleLabel" destination="iSU-b9-Siq" id="pxU-Kn-rB2"/>
+            </connections>
+            <point key="canvasLocation" x="38" y="263"/>
+        </tableViewCell>
+    </objects>
+</document>
