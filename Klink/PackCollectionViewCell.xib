@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Gotham-Book.otf">
+            <string>Gotham-Book</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PackCollectionViewCell" customModule="Klink" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="206" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="206" height="155"/>
+                <subviews>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="pdR-UN-iCD">
+                        <rect key="frame" x="95" y="62" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="ZR5-Wy-MwS"/>
+                            <constraint firstAttribute="width" constant="16" id="gec-je-UQF"/>
+                        </constraints>
+                    </activityIndicatorView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8pl-ee-IuP">
+                        <rect key="frame" x="0.0" y="0.0" width="206" height="131"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y8f-Wp-CaL">
+                        <rect key="frame" x="0.0" y="131" width="206" height="24"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnA-Cq-4aP">
+                                <rect key="frame" x="5" y="6" width="196" height="12"/>
+                                <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="PnA-Cq-4aP" firstAttribute="leading" secondItem="Y8f-Wp-CaL" secondAttribute="leading" constant="5" id="Ham-yA-EtV"/>
+                            <constraint firstItem="PnA-Cq-4aP" firstAttribute="centerY" secondItem="Y8f-Wp-CaL" secondAttribute="centerY" id="Hsd-iC-M6s"/>
+                            <constraint firstItem="PnA-Cq-4aP" firstAttribute="centerX" secondItem="Y8f-Wp-CaL" secondAttribute="centerX" id="Uu8-DV-AaI"/>
+                            <constraint firstAttribute="trailing" secondItem="PnA-Cq-4aP" secondAttribute="trailing" constant="5" id="bNz-ED-qRb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="pdR-UN-iCD" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="0JP-6N-TlW"/>
+                <constraint firstItem="Y8f-Wp-CaL" firstAttribute="top" secondItem="8pl-ee-IuP" secondAttribute="bottom" id="CU5-KA-HDk"/>
+                <constraint firstAttribute="trailing" secondItem="8pl-ee-IuP" secondAttribute="trailing" id="EdT-nc-g0k"/>
+                <constraint firstItem="pdR-UN-iCD" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-8" id="GXx-Ol-4OS"/>
+                <constraint firstItem="8pl-ee-IuP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UPY-vT-kAm"/>
+                <constraint firstAttribute="bottom" secondItem="Y8f-Wp-CaL" secondAttribute="bottom" id="Y5t-1Q-oev"/>
+                <constraint firstItem="8pl-ee-IuP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="nrr-Da-Ire"/>
+                <constraint firstItem="Y8f-Wp-CaL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rfS-sb-qxt"/>
+                <constraint firstAttribute="bottom" secondItem="8pl-ee-IuP" secondAttribute="bottom" constant="24" id="xoj-YR-ona"/>
+                <constraint firstAttribute="trailing" secondItem="Y8f-Wp-CaL" secondAttribute="trailing" id="yf2-OT-eXS"/>
+            </constraints>
+            <size key="customSize" width="206" height="155"/>
+            <connections>
+                <outlet property="nameLabel" destination="PnA-Cq-4aP" id="bk1-I5-4lQ"/>
+                <outlet property="packImageView" destination="8pl-ee-IuP" id="mz1-7P-HCK"/>
+                <outlet property="spinner" destination="pdR-UN-iCD" id="loJ-uj-5wI"/>
+            </connections>
+            <point key="canvasLocation" x="332" y="400.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
