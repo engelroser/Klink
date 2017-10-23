@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Gotham-Book.otf">
+            <string>Gotham-Book</string>
+            <string>Gotham-Book</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopDateViewController" customModule="Klink" customModuleProvider="target">
+            <connections>
+                <outlet property="container" destination="qAU-ER-JUG" id="khd-QD-Q5Z"/>
+                <outlet property="datePicker" destination="wwH-0A-z6Q" id="2CI-Vf-3Gy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="600" placeholderIntrinsicHeight="600" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="600" placeholderIntrinsicHeight="180" translatesAutoresizingMaskIntoConstraints="NO" id="qAU-ER-JUG" userLabel="container">
+                    <rect key="frame" x="0.0" y="160" width="600" height="221"/>
+                    <subviews>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="wwH-0A-z6Q">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="180"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="180" id="3BG-tK-CiG"/>
+                            </constraints>
+                            <date key="date" timeIntervalSinceReferenceDate="463479620.32781899">
+                                <!--2015-09-09 08:20:20 +0000-->
+                            </date>
+                        </datePicker>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Esv-IG-QhL">
+                            <rect key="frame" x="300" y="181" width="300" height="40"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="16"/>
+                            <state key="normal" title="OK">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="okPressed:" destination="-1" eventType="touchUpInside" id="DLk-82-kcO"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5aq-K3-j7Q" userLabel="horizontal border">
+                            <rect key="frame" x="0.0" y="180" width="600" height="1"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="eoz-u9-Vrg"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrK-Kg-Nmo">
+                            <rect key="frame" x="0.0" y="181" width="300" height="40"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="1Cu-H0-WUg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="16"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelPressed:" destination="-1" eventType="touchUpInside" id="rEK-Rc-V0a"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M1M-a1-mw2" userLabel="vertical border">
+                            <rect key="frame" x="300" y="181" width="1" height="40"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="u17-W0-0Oc"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="wwH-0A-z6Q" firstAttribute="top" secondItem="qAU-ER-JUG" secondAttribute="top" id="1Pt-bd-P1U"/>
+                        <constraint firstAttribute="trailing" secondItem="Esv-IG-QhL" secondAttribute="trailing" id="2Cg-fN-xFr"/>
+                        <constraint firstAttribute="width" secondItem="Esv-IG-QhL" secondAttribute="width" multiplier="2:1" id="2gw-74-R6P"/>
+                        <constraint firstAttribute="bottom" secondItem="M1M-a1-mw2" secondAttribute="bottom" id="4aQ-0T-PN0"/>
+                        <constraint firstItem="5aq-K3-j7Q" firstAttribute="top" secondItem="wwH-0A-z6Q" secondAttribute="bottom" id="Hcr-mA-CxT"/>
+                        <constraint firstAttribute="trailing" secondItem="5aq-K3-j7Q" secondAttribute="trailing" id="MG4-kD-aRW"/>
+                        <constraint firstItem="M1M-a1-mw2" firstAttribute="top" secondItem="5aq-K3-j7Q" secondAttribute="bottom" id="Q4q-5E-v4c"/>
+                        <constraint firstItem="5aq-K3-j7Q" firstAttribute="top" secondItem="M1M-a1-mw2" secondAttribute="top" id="YC0-Ri-v4s"/>
+                        <constraint firstItem="nrK-Kg-Nmo" firstAttribute="leading" secondItem="qAU-ER-JUG" secondAttribute="leading" id="b8P-gK-HOj"/>
+                        <constraint firstItem="5aq-K3-j7Q" firstAttribute="leading" secondItem="qAU-ER-JUG" secondAttribute="leading" id="d24-ZJ-spZ"/>
+                        <constraint firstItem="wwH-0A-z6Q" firstAttribute="leading" secondItem="qAU-ER-JUG" secondAttribute="leading" id="d3I-t9-T0d"/>
+                        <constraint firstAttribute="centerX" secondItem="M1M-a1-mw2" secondAttribute="centerX" constant="-0.5" id="gZm-cm-gDr"/>
+                        <constraint firstAttribute="bottom" secondItem="Esv-IG-QhL" secondAttribute="bottom" id="iCb-8K-e5A"/>
+                        <constraint firstItem="Esv-IG-QhL" firstAttribute="leading" secondItem="nrK-Kg-Nmo" secondAttribute="trailing" id="lpj-f0-dyS"/>
+                        <constraint firstItem="nrK-Kg-Nmo" firstAttribute="top" secondItem="5aq-K3-j7Q" secondAttribute="bottom" id="oqs-Ps-oDW"/>
+                        <constraint firstAttribute="height" constant="180" id="rzZ-t9-CeR"/>
+                        <constraint firstAttribute="bottom" secondItem="nrK-Kg-Nmo" secondAttribute="bottom" id="tHV-2r-SGm"/>
+                        <constraint firstAttribute="trailing" secondItem="wwH-0A-z6Q" secondAttribute="trailing" id="vNC-qB-4VM"/>
+                        <constraint firstItem="Esv-IG-QhL" firstAttribute="top" secondItem="5aq-K3-j7Q" secondAttribute="bottom" id="zBe-nA-SYF"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="rzZ-t9-CeR"/>
+                            <exclude reference="YC0-Ri-v4s"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qAU-ER-JUG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="BsA-nD-535"/>
+                <constraint firstAttribute="trailing" secondItem="qAU-ER-JUG" secondAttribute="trailing" id="Oan-yk-sUD"/>
+                <constraint firstItem="qAU-ER-JUG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cur-Fu-Mmv"/>
+                <constraint firstItem="qAU-ER-JUG" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-30" id="zvT-uq-7yC"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="BsA-nD-535"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
