@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Gotham-Bold-test.otf">
+            <string>Gotham-Bold</string>
+        </mutableArray>
+        <mutableArray key="Gotham-Book.otf">
+            <string>Gotham-Book</string>
+            <string>Gotham-Book</string>
+            <string>Gotham-Book</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PromoCodeViewController" customModule="Klink" customModuleProvider="target">
+            <connections>
+                <outlet property="checkCodeButton" destination="Oef-AO-ihF" id="pUF-bx-Uus"/>
+                <outlet property="codeTextField" destination="RVW-Gn-Lcl" id="drP-6o-3Tf"/>
+                <outlet property="contentView" destination="Ydi-v0-Uca" id="8dN-SG-DDi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="600" placeholderIntrinsicHeight="600" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="600" placeholderIntrinsicHeight="300" translatesAutoresizingMaskIntoConstraints="NO" id="Ydi-v0-Uca">
+                    <rect key="frame" x="0.0" y="50" width="600" height="220"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER A PROMO CODE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xAy-TJ-AJf">
+                            <rect key="frame" x="35" y="25" width="530" height="15"/>
+                            <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="your promo code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RVW-Gn-Lcl">
+                            <rect key="frame" x="190" y="65" width="220" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="220" id="7jc-Jw-eJv"/>
+                                <constraint firstAttribute="height" constant="40" id="r4I-Wt-uIe"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oef-AO-ihF">
+                            <rect key="frame" x="222" y="125" width="157" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="8GR-U8-Lci"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="14"/>
+                            <state key="normal" title="CHECK PROMO CODE"/>
+                            <connections>
+                                <action selector="checkCodePressed:" destination="-1" eventType="touchUpInside" id="MQD-n9-zWI"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3k-0W-SHu">
+                            <rect key="frame" x="277" y="175" width="47" height="27"/>
+                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="14"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" red="0.62745098040000002" green="0.62745098040000002" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="dismissPressed:" destination="-1" eventType="touchUpInside" id="W3f-Zg-5e0"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="RVW-Gn-Lcl" firstAttribute="centerX" secondItem="Ydi-v0-Uca" secondAttribute="centerX" id="0YG-nm-PNn"/>
+                        <constraint firstItem="Oef-AO-ihF" firstAttribute="centerX" secondItem="Ydi-v0-Uca" secondAttribute="centerX" id="2a8-rb-BrZ"/>
+                        <constraint firstItem="i3k-0W-SHu" firstAttribute="top" secondItem="RVW-Gn-Lcl" secondAttribute="bottom" constant="70" id="JxQ-FI-Ifo"/>
+                        <constraint firstAttribute="trailing" secondItem="xAy-TJ-AJf" secondAttribute="trailing" constant="35" id="O0w-fB-L9T"/>
+                        <constraint firstItem="i3k-0W-SHu" firstAttribute="centerX" secondItem="Ydi-v0-Uca" secondAttribute="centerX" id="RxS-k8-Uce"/>
+                        <constraint firstItem="xAy-TJ-AJf" firstAttribute="leading" secondItem="Ydi-v0-Uca" secondAttribute="leading" constant="35" id="UFb-5a-2GB"/>
+                        <constraint firstAttribute="bottom" secondItem="i3k-0W-SHu" secondAttribute="bottom" constant="20" id="YSp-bI-l0W"/>
+                        <constraint firstAttribute="height" constant="220" id="ZKi-6J-YX2"/>
+                        <constraint firstItem="Oef-AO-ihF" firstAttribute="top" secondItem="RVW-Gn-Lcl" secondAttribute="bottom" constant="20" id="fh9-wV-hl8"/>
+                        <constraint firstItem="RVW-Gn-Lcl" firstAttribute="top" secondItem="xAy-TJ-AJf" secondAttribute="bottom" constant="25" id="paJ-ti-6fb"/>
+                        <constraint firstItem="xAy-TJ-AJf" firstAttribute="top" secondItem="Ydi-v0-Uca" secondAttribute="top" constant="25" id="rpQ-ca-DeH"/>
+                        <constraint firstAttribute="bottom" secondItem="Oef-AO-ihF" secondAttribute="bottom" constant="30" id="uol-Hl-ufo"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="uol-Hl-ufo"/>
+                            <exclude reference="YSp-bI-l0W"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Ydi-v0-Uca" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1Da-l2-50j"/>
+                <constraint firstAttribute="trailing" secondItem="Ydi-v0-Uca" secondAttribute="trailing" id="7ne-kF-qqu"/>
+                <constraint firstItem="Ydi-v0-Uca" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-50" id="AD6-X9-gd9"/>
+                <constraint firstAttribute="bottom" secondItem="Ydi-v0-Uca" secondAttribute="bottom" id="k1Y-0X-40t"/>
+                <constraint firstItem="Ydi-v0-Uca" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="mDs-Pk-fjl"/>
+                <constraint firstItem="Ydi-v0-Uca" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pis-Gc-Qeq"/>
+                <constraint firstItem="Ydi-v0-Uca" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="ttQ-V5-E9K"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="AD6-X9-gd9"/>
+                    <exclude reference="k1Y-0X-40t"/>
+                    <exclude reference="mDs-Pk-fjl"/>
+                    <exclude reference="pis-Gc-Qeq"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
