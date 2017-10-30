@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Gotham-Medium.otf">
+            <string>Gotham-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SavedCardsViewController" customModule="Klink" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iOs-7r-wK9" id="YGX-ur-dtk"/>
+                <outlet property="tableView" destination="KfJ-LB-ocp" id="4b0-eK-JHS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="400" translatesAutoresizingMaskIntoConstraints="NO" id="iOs-7r-wK9">
+                    <rect key="frame" x="0.0" y="100" width="600" height="400"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KfJ-LB-ocp">
+                            <rect key="frame" x="0.0" y="68" width="600" height="332"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="CKP-WT-1n5"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="CKP-WT-1n5"/>
+                                </mask>
+                            </variation>
+                        </tableView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fm1-g6-IVG">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="68"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SAVED CARDS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIZ-U5-xBa">
+                                    <rect key="frame" x="240" y="26" width="120" height="16"/>
+                                    <fontDescription key="fontDescription" name="Gotham-Medium" family="Gotham" pointSize="16"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h0Q-dj-mjs">
+                                    <rect key="frame" x="0.0" y="67" width="600" height="1"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="qhk-DW-QAf"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bG-YL-MOf">
+                                    <rect key="frame" x="569" y="14" width="17" height="17"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="17" id="7gk-zE-Abg"/>
+                                        <constraint firstAttribute="width" constant="17" id="zGy-Bm-Lyh"/>
+                                    </constraints>
+                                    <state key="normal" backgroundImage="close-card-icon.png"/>
+                                    <connections>
+                                        <action selector="dismissPressed:" destination="-1" eventType="touchUpInside" id="77l-AB-ipN"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="h0Q-dj-mjs" firstAttribute="leading" secondItem="Fm1-g6-IVG" secondAttribute="leading" id="2yD-sI-c30"/>
+                                <constraint firstAttribute="height" constant="68" id="4uo-OB-bX3"/>
+                                <constraint firstItem="3bG-YL-MOf" firstAttribute="top" secondItem="Fm1-g6-IVG" secondAttribute="top" constant="14" id="KVD-Dm-30F"/>
+                                <constraint firstAttribute="trailing" secondItem="h0Q-dj-mjs" secondAttribute="trailing" id="KwR-DK-DGs"/>
+                                <constraint firstItem="eIZ-U5-xBa" firstAttribute="centerX" secondItem="Fm1-g6-IVG" secondAttribute="centerX" id="Tjf-k7-pY2"/>
+                                <constraint firstItem="eIZ-U5-xBa" firstAttribute="centerY" secondItem="Fm1-g6-IVG" secondAttribute="centerY" id="bmZ-jK-LZx"/>
+                                <constraint firstAttribute="trailing" secondItem="3bG-YL-MOf" secondAttribute="trailing" constant="14" id="e1P-5F-D29"/>
+                                <constraint firstAttribute="bottom" secondItem="h0Q-dj-mjs" secondAttribute="bottom" id="fbi-2V-R0m"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Fm1-g6-IVG" secondAttribute="trailing" id="35Z-kA-HkC"/>
+                        <constraint firstAttribute="trailing" secondItem="KfJ-LB-ocp" secondAttribute="trailing" id="AsM-cb-Ulg"/>
+                        <constraint firstAttribute="bottom" secondItem="KfJ-LB-ocp" secondAttribute="bottom" id="HsI-Ob-o8h"/>
+                        <constraint firstItem="Fm1-g6-IVG" firstAttribute="leading" secondItem="iOs-7r-wK9" secondAttribute="leading" id="P0C-Ga-G2B"/>
+                        <constraint firstAttribute="trailing" secondItem="Fm1-g6-IVG" secondAttribute="trailing" id="ZlC-uN-YUM"/>
+                        <constraint firstItem="KfJ-LB-ocp" firstAttribute="leading" secondItem="iOs-7r-wK9" secondAttribute="leading" id="cBT-4Q-Qe3"/>
+                        <constraint firstAttribute="height" constant="290" id="fvZ-kb-2fA"/>
+                        <constraint firstItem="Fm1-g6-IVG" firstAttribute="top" secondItem="iOs-7r-wK9" secondAttribute="top" id="g0d-7L-eFB"/>
+                        <constraint firstItem="KfJ-LB-ocp" firstAttribute="top" secondItem="Fm1-g6-IVG" secondAttribute="bottom" id="meu-vw-mzR"/>
+                        <constraint firstItem="Fm1-g6-IVG" firstAttribute="leading" secondItem="iOs-7r-wK9" secondAttribute="leading" id="tUH-Wy-WHg"/>
+                        <constraint firstItem="Fm1-g6-IVG" firstAttribute="top" secondItem="iOs-7r-wK9" secondAttribute="top" id="us2-WA-b4O"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="fvZ-kb-2fA"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iOs-7r-wK9" secondAttribute="trailing" id="GXB-xv-Vgu"/>
+                <constraint firstItem="iOs-7r-wK9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="WiU-MR-Yug"/>
+                <constraint firstAttribute="bottom" secondItem="iOs-7r-wK9" secondAttribute="bottom" constant="100" id="qrL-UZ-fxP"/>
+                <constraint firstItem="iOs-7r-wK9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="z2x-dU-opj"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="close-card-icon.png" width="36" height="36"/>
+    </resources>
+</document>
