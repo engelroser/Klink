@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SocialAppsViewController" customModule="Klink" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OU3-zy-KaS" userLabel="facebook button">
+                    <rect key="frame" x="50" y="275" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="4dU-1U-ZYt"/>
+                        <constraint firstAttribute="width" constant="50" id="n1M-h7-HHg"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="social-icon-facebook.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="facebookButtonPressed:" destination="-1" eventType="touchUpInside" id="jU3-9u-JKc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xhn-5o-yA4" userLabel="twitter button">
+                    <rect key="frame" x="200" y="275" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Qar-ye-xoj"/>
+                        <constraint firstAttribute="height" constant="50" id="Y9T-1P-RnL"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="social-icon-twitter.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="twitterButtonPressed:" destination="-1" eventType="touchUpInside" id="rUh-dL-r1S"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pam-pN-Gop" userLabel="pinterest button">
+                    <rect key="frame" x="500" y="275" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="JgG-qA-BHu"/>
+                        <constraint firstAttribute="height" constant="50" id="P1V-Wc-hcN"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="social-icon-pinterest.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pinterestButtonPressed:" destination="-1" eventType="touchUpInside" id="6Tn-6B-4wV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZh-6G-A8y" userLabel="instagram button">
+                    <rect key="frame" x="350" y="275" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="4XV-Kj-nU3"/>
+                        <constraint firstAttribute="width" constant="50" id="E5a-a1-rU6"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="social-icon-instagram.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="instagramButtonPressed:" destination="-1" eventType="touchUpInside" id="Jla-dm-BgD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="OU3-zy-KaS" secondAttribute="centerX" multiplier="4:1" id="Bgk-0a-sQe"/>
+                <constraint firstAttribute="centerX" secondItem="pam-pN-Gop" secondAttribute="centerX" multiplier="4:7" id="EhQ-Y8-t5Z"/>
+                <constraint firstAttribute="centerY" secondItem="pam-pN-Gop" secondAttribute="centerY" id="Hwi-Ud-bB5"/>
+                <constraint firstAttribute="centerY" secondItem="OU3-zy-KaS" secondAttribute="centerY" id="RL1-QG-IEG"/>
+                <constraint firstAttribute="centerY" secondItem="eZh-6G-A8y" secondAttribute="centerY" id="caA-Kq-T77"/>
+                <constraint firstAttribute="centerX" secondItem="eZh-6G-A8y" secondAttribute="centerX" multiplier="4:5" id="n3w-Wi-W46"/>
+                <constraint firstAttribute="centerY" secondItem="Xhn-5o-yA4" secondAttribute="centerY" id="nIJ-SL-Zgk"/>
+                <constraint firstAttribute="centerX" secondItem="Xhn-5o-yA4" secondAttribute="centerX" multiplier="4:3" id="xm3-d0-pgq"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="social-icon-facebook.png" width="44" height="44"/>
+        <image name="social-icon-instagram.png" width="44" height="44"/>
+        <image name="social-icon-pinterest.png" width="44" height="44"/>
+        <image name="social-icon-twitter.png" width="44" height="44"/>
+    </resources>
+</document>
